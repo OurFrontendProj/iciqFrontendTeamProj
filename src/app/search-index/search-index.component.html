@@ -1,0 +1,15 @@
+<div class="topBlock"></div>
+
+<div class="logo">
+  <img src="./assets/logo.cd734165.png" alt="LOGO">
+</div>
+
+<div class="search">
+  <nz-input [nzType]="'search'" [nzPlaceHolder]="'input search text'" [(ngModel)]="searchValue" id="textSearch" (nzOnSearch)="onSearch($event)"></nz-input>
+  <button nz-button (click)="onSearch($event)"  [nzType]="'primary'" style="width:100px; height:40px;">
+    <span style="font-size: 15px;">搜索</span>
+  </button>
+  <!--<input type="button" class="btnSearch" id="btn" value="搜索" onclick="search()"/>-->
+</div>
+
+<div class="foot" id="request"></div>

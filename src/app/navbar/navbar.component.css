@@ -1,0 +1,29 @@
+:host ::ng-deep .navBrand {
+  /*width: 120px;*/
+  /*height: 31px;*/
+  /*background: #333;*/
+  /*border-radius: 6px;*/
+  /*margin: 16px 28px 16px 0;*/
+  margin-top: 5px;
+  position: absolute;
+}
+
+.navBrand > img {
+  float: left;
+}
+
+.navBrand > ul {
+  width:300px;
+  color: #E0E0E0;
+  vertical-align:middle;
+  margin: 5px 10px 10px 60px;
+}
+
+.navBrand > ul >li {
+  line-height: normal;
+}
+
+.topnav {
+  margin-left: 350px;
+  font-size: 14px;
+}

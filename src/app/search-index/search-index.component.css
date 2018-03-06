@@ -1,0 +1,62 @@
+
+.topBlock {
+  height: 100px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+a{
+  color: black;
+  font-size: 13px;
+  margin-right: 10px;
+  text-decoration:none
+}
+
+a:hover {
+  color: #0909F7;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 129px;
+  height: 129px;
+}
+
+.search {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#textSearch {
+  width: 540px;
+  height: 38px;
+  font-size: 16px;
+}
+
+.btnSearch {
+  height: 44px;
+  width: 100px;
+  background-color: #3385FF;
+  font-size: 15px;
+  color: #FFF;
+  border: solid;
+  /*margin-left: -10px;*/
+  border-style: none\9;
+  height: 36px\9;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.foot{
+  margin-top: 20px;
+  text-align: center;
+}
+
+li{
+  list-style-type:none;
+}
