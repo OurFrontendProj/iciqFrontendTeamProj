@@ -36,6 +36,7 @@ export class EchartExampleComponent implements OnInit, OnDestroy {
         trigger: 'axis',
         formatter: (params) => {
           params = params[0];
+          // console.log("params: " + params);
           let date = new Date(params.name);
           return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' : ' + params.value[1];
         },

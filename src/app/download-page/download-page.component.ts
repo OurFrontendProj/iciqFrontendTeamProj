@@ -19,6 +19,7 @@ export class DownloadPageComponent implements OnInit {
     this.year = this.routeInfo.snapshot.queryParams['year'];
     this.month = this.routeInfo.snapshot.queryParams['month'];
 
+    // 确定链接url
     if (this.year && this.month) {
       // console.log('year: ' + this.year);
       $('.dwlink').text(this.year + '年' + this.month + '月的相关数据汇总下载');

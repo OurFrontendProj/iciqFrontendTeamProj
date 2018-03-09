@@ -17,6 +17,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { EchartExampleComponent } from './echart-example/echart-example.component';
 import { DownloadPageComponent } from './download-page/download-page.component';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import { DataQueryComponent } from './data-query/data-query.component';
 
 
 
@@ -30,7 +31,8 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
     SearchIndexComponent,
     LayoutComponent,
     EchartExampleComponent,
-    DownloadPageComponent
+    DownloadPageComponent,
+    DataQueryComponent
   ],
   imports: [
     NgxEchartsModule,
