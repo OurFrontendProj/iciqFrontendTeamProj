@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppComponent } from './app.component';
@@ -16,7 +16,7 @@ import { SearchIndexComponent } from './search-index/search-index.component';
 import { LayoutComponent } from './layout/layout.component';
 import { EchartExampleComponent } from './echart-example/echart-example.component';
 import { DownloadPageComponent } from './download-page/download-page.component';
-import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import {DatePipe, HashLocationStrategy, LocationStrategy} from "@angular/common";
 import { DataQueryComponent } from './data-query/data-query.component';
 
 
@@ -41,10 +41,12 @@ import { DataQueryComponent } from './data-query/data-query.component';
     HttpClientModule,
     BrowserAnimationsModule,
     NgZorroAntdModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    DatePipe,
+    {provide: LocationStrategy, useClass: HashLocationStrategy,}
   ],
   bootstrap: [AppComponent]
 })
